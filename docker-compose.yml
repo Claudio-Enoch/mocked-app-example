@@ -9,13 +9,14 @@ services:
     command: --port 80
 
   webapp:
-      build:
-        context: webapp
-      ports:
-        - 5000:5050
-      volumes:
-        - C:\Projects\mock-testing-example\webapp:/usr/src/app
-      links:
-        - wiremocked:ip.jsontest.com
-      depends_on:
-        - wiremocked
+    build:
+      context: webapp
+    ports:
+      - 5000:5050
+    volumes:
+      - C:\Projects\mock-testing-example\webapp:/usr/src/app
+    links:
+      - wiremocked:ip.jsontest.com
+      - wiremocked:api.weatherstack.com
+    depends_on:
+      - wiremocked
