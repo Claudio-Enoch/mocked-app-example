@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/current\\?query=fakeplace&.*"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "weather_fakeplace.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

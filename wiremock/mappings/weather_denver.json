@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/current\\?query=denver&.*"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "weather_denver.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
