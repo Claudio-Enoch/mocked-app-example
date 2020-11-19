@@ -1,0 +1,8 @@
+{
+  "error": {
+    "code": 615,
+    "info": "Your API request failed. Please try again or contact support.",
+    "type": "request_failed"
+  },
+  "success": false
+}
