@@ -5,7 +5,7 @@ services:
     ports:
       - 80:80
     volumes:
-      - C:\Projects\mock-testing-example\wiremock:/home/wiremock
+      - ./wiremock:/home/wiremock
     command: --port 80
 
   webapp:
@@ -14,7 +14,7 @@ services:
     ports:
       - 5000:5050
     volumes:
-      - C:\Projects\mock-testing-example\webapp:/usr/src/app
+      - ./webapp:/usr/src/app
     links:
       - wiremocked:ip.jsontest.com
       - wiremocked:api.weatherstack.com
